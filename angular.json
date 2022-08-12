@@ -28,22 +28,45 @@
               "src/assets"
             ],
             "styles": [
+             "src/assets/css/bootstrap.min.css",
+             "src/assets/css/fontawesome.min.css",
+            
+             "src/assets/css/plugin/nice-select.css",
+             "src/assets/css/plugin/magnific-popup.css",
+             "src/assets/css/plugin/slick.css",
+             "src/assets/css/arafat-font.css",
+             "src/assets/css/plugin/animate.css",
+             "src/assets/css/style.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/jquery-ui/dist/jquery-ui.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/fontawesome.js",
+              "src/assets/js/plugin/slick.js",
+              "src/assets/js/plugin/jquery.nice-select.min.js",
+              "src/assets/js/plugin/jquery.downCount.js",
+              "src/assets/js/plugin/counter.js",
+              "src/assets/js/plugin/waypoint.min.js",
+              "src/assets/js/plugin/jquery.magnific-popup.min.js",
+              "src/assets/js/plugin/wow.min.js",
+              "src/assets/js/plugin/plugin.js",
+              "src/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "10mb"
                 }
               ],
               "fileReplacements": [
@@ -95,9 +118,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": [],
             "scripts": []
           }
         }
